@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blooming – Floral Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav-wrap">
+      <nav class="nav" aria-label="Main">
+        <a href="#home" class="logo">Blooming Flowers</a>
+        <button
+          class="burger"
+          id="burger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="links" id="links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#flowers">Our Flowers</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#occasions">Occasions</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <h1>Every Bloom Tells a Story.</h1>
+          <p>
+            Blooming is a small floral boutique making hand-tied bouquets and
+            arrangements for the moments worth remembering.
+          </p>
+          <a href="#flowers" class="btn">Explore Our Flowers</a>
+        </div>
+        <div class="ph hero-img" data-img="images/hero.jpg"></div>
+      </section>
+
+      <section class="section" id="collections">
+        <h2>Featured Collections</h2>
+        <p class="lead">Tap a collection to see its flowers in the gallery.</p>
+        <div class="grid cols-4" id="collectionGrid"></div>
+      </section>
+
+      <section class="section tint" id="flowers">
+        <h2>Our Flowers</h2>
+        <div class="tools">
+          <input
+            type="search"
+            id="search"
+            placeholder="Search flowers by name"
+            aria-label="Search flowers"
+          />
+          <div class="filters" id="filters"></div>
+        </div>
+        <div class="grid cols-4" id="productGrid"></div>
+        <p class="empty" id="empty" hidden>
+          No flowers match your search. Try another name or category.
+        </p>
+      </section>
+
+      <section class="section" id="occasions">
+        <h2>Shop by Occasion</h2>
+        <p class="lead">Find the right flowers for the moment.</p>
+        <div class="grid cols-4" id="occasionGrid"></div>
+      </section>
+
+      <section class="section tint about" id="about">
+        <div class="ph about-img" data-img="images/about.jpg"></div>
+        <div>
+          <h2>About Blooming</h2>
+          <p>
+            We started Blooming because flowers say what we can't. Each
+            arrangement is tied by hand, using fresh stems chosen that morning.
+          </p>
+          <p>
+            We believe a gift should feel personal. Tell us who it's for, and
+            we'll help you pick flowers that suit them.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+          <ul class="info">
+            <li><b>Email</b> hello@blooming.example</li>
+            <li><b>Phone</b> +63 900 000 0000</li>
+            <li><b>Address</b> 123 Flower Street, Santa Cruz, Philippines</li>
+            <li class="social">
+              <a href="#">Instagram</a> <a href="#">Facebook</a>
+              <a href="#">TikTok</a>
+            </li>
+          </ul>
+          <form id="form" novalidate>
+            <label>Name<input name="name" type="text" /><small></small></label>
+            <label
+              >Email<input name="email" type="email" /><small></small
+            ></label>
+            <label
+              >Message<textarea name="message" rows="4"></textarea
+              ><small></small
+            ></label>
+            <button class="btn" type="submit">Send message</button>
+            <p class="ok" id="ok" hidden>Thank you! We'll reply soon.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <div>
+          <a href="#home" class="logo">Blooming</a>
+          <p>Hand-tied flowers for every story.</p>
+        </div>
+        <ul>
+          <li><a href="#flowers">Our Flowers</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#occasions">Occasions</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+        <div>
+          <b>Contact</b>
+          <p>
+            hello@blooming.example<br />+63 900 000 0000<br />Santa Cruz,
+            Philippines
+          </p>
+        </div>
+      </div>
+      <p class="copy">© 2026 Blooming. All rights reserved.</p>
+    </footer>
+
+    <button id="top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>
